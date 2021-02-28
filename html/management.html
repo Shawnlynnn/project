@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>固定资产管理系统操作中心</title>
+    <link rel="stylesheet" href="../css/management.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="../../jquery/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="../js/ajax.js"></script>
+
+</head>
+
+<body>
+    <!-- 管理员登录之后的界面，有所有功能 -->
+    <div class="topLogo">
+        <div class="logo"><img src="../images/logo1.jpg" alt=""></div>
+
+    </div>
+    <div class="inform">
+        <span class="pers"><a href="../html/index.html" class="loginout">退出登录</a></span>
+    </div>
+    <div class="center">
+        <!-- <div class="oper"> -->
+        <ul class="list1">
+            <li class="main active">首页</li>
+            <li class="eqstatus">资产状况</li>
+            <li class="instore">资产入库</li>
+            <li class="trepair">资产报修</li>
+            <li class="scrap">资产报废</li>
+            <li></li>
+
+        </ul>
+        <!-- </div> -->
+        <div class="cont">
+            <div class="index ">
+                <!--  首页可看资产总数， 资产总额，正常资产数，报修数，报废数-->
+
+            </div>
+            <div class="status">
+
+                <table id="tableList" class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>设备名称</th>
+                            <th>价值</th>
+                            <th>设备状态</th>
+                            <th>入库时间</th>
+                            <th>操作</th>
+                            <th>最后更新时间</th>
+                        </tr>
+                    </thead>
+                    <tbody id="content">
+                        <!-- <tr>
+                            <td>212</td>
+                            <td>12</td>
+                            <td>3543534</td>
+                            <td>465456456</td>
+                            <td>
+                                <button type="button" class="del" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">操作<span class="caret"></span></button>
+
+                            </td>
+                        </tr> -->
+                    </tbody>
+
+                </table>
+
+                <div class="page"></div>
+
+            </div>
+            <div class="instorage">
+                <div class="form_instorage">
+                    <p class="instorage_title">资产采购入库</p>
+                    <p><label for="">资产名称:</label> <input type="text" class="equipname"></p>
+                    <p><label for="">资产编号:</label> <input type="text" class="equipnum"></p>
+                    <p><label for="">资产价值:</label> <input type="text" class="equipvalue"></p>
+                    <!-- <p><label for="">资产状态:</label> <input type="text" class="equipstatus"></p>
+                -->
+                    <p><label for="">入库时间:</label> <input type="text" class="in_time"></p>
+                    <p class="tip"><span>时间格式如：2020-01-01</span></p>
+                    <p><button class="sure">确定入库</button></p>
+                </div>
+            </div>
+            <div class="repaire">
+                <div class="form_repaire">
+                    <p class="repaire_title">资产报修</p>
+                    <p><label for="">资产名称:</label> <input type="text" class="repairename"></p>
+                    <p><label for="">资产编号:</label> <input type="text" class="repairenum"></p>
+
+
+                    <p><label for="">报修时间:</label> <input type="text" class="repaire_time"></p>
+                    <p class="tip"><span>时间格式如：2020-01-01</span></p>
+                    <p><button class="sureRepaire">确定报修</button></p>
+                </div>
+            </div>
+            <div class="scrapF">
+                <div class="form_scrap">
+                    <p class="scrap_title">资产报废</p>
+                    <p><label for="">资产名称:</label> <input type="text" class="scrapname"></p>
+                    <p><label for="">资产编号:</label> <input type="text" class="scrapnum"></p>
+
+
+                    <p><label for="">报废时间:</label> <input type="text" class="scrap_time"></p>
+                    <p class="tip"><span>时间格式如：2020-01-01</span></p>
+                    <p><button class="sureScrap">确定报废</button></p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+    <div class="bottom">
+
+    </div>
+
+    <script src="../js/cookie.js"></script>
+    <script src="../js/pagination.js"></script>
+    <script src="../js/management.js"></script>
+
+
+
+</body>
+
+</html>

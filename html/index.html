@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>欢迎使用资产管理系统</title>
+
+    <link rel="stylesheet" href="../css/index.css">
+
+</head>
+
+<body>
+    <!-- 主页面，即登录页面  可选择管理员登录  
+     
+        游客可直接进入报修页面
+
+
+    游客登录亦是如此
+    -->
+    <div id="bgImg"></div>
+    <div id="title">固定资产管理系统</div>
+
+    <div id="content">
+        <div class="login1">
+            <div class="loginType">
+                <p class="welcome">欢迎登录</p>
+                <p class="userType"><span>管理员登录</span></p>
+            </div>
+            <div class="form1">
+                <form class="loginForm">
+                    <p><label for="">账号：</label><input type="text" class="username" placeholder="请输入你的管理员账号"></p>
+
+                    <p><label for="">密码：</label><input type="password" class="password" placeholder="请输入你的密码"></p>
+                    <p><label for="">验证码：</label><input type="text" class="code" maxlength="6"> <span id="code"></span></p>
+                    <p><button id="btn" type="submit">登录</button></p>
+                    <div class="register"><span> <a href="./register.html" target="_blank">点击注册管理员账号</a></span><span><a href="./repaired.html" target="_blank" >我要报修</a></span></div>
+
+
+
+                </form>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <script>
+    </script>
+    <script src="../js/gverify.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/ajax.js"></script>
+    <script src="../js/cookie.js"></script>
+</body>
+
+</html>

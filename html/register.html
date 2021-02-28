@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册</title>
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+
+<body>
+    <!-- 注册页面 
+    游客按照对应的正则，完成注册之后，将用户名和密码存入数据库，然后登录的时候同之进行比对，一致则登录成功
+    
+    -->
+    <div id="bgImg"></div>
+
+    <div id="content">
+        <div class="register">
+            <div class="loginType">
+                <p class="welcome">管理员注册</p>
+
+            </div>
+            <div class="form2">
+                <form action="" name="administrator" method="post" class="rgst">
+                    <p><label for="">账号：</label><input type="text" placeholder="请输入需要注册的账号" class="username">
+                        <br><span class="tip nametip">账号必须为十一位数字组成</span></p>
+                    <p><label for="">手机号：</label><input type="text" placeholder="请输入你的手机号" class="tel"><br><span class="tip teltip">请输入你的十一位手机号</span></p>
+                    <p><label for="">密码：</label><input type="password" placeholder="请输入你的密码" class="password"><br><span class="tip pswtip">密码必须由大写字母开头，不能包含空格，长度为8-12</span></p>
+                    <p><label for="">邮箱：</label><input type="text" placeholder="请输入你的邮箱" class="email"><br><span class="tip teltip">请输入你正确的邮箱</span></p>
+                    <p><label for="">主管理员邀请码：</label><input type="text" class="code" maxlength="6"><br><span class="tip codetip">请输入主管理员的邀请码</span> </p>
+                    <p><button id="btn" type="submit">注册</button></p>
+
+                </form>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <script src="../js/ajax.js"></script>
+    <script src="../js/register.js"></script>
+</body>
+
+</html>

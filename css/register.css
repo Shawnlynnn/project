@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#bgImg {
+    /* width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+     */
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: url(../images/background1.jpg) no-repeat;
+    background-size: cover;
+}
+
+body {
+    font-family: PingFang-SC-Regular, Helvetica, "Microsoft Yahei", "微软雅黑";
+}
+
+.register {
+    position: absolute;
+    right: 30%;
+    top: 45%;
+    margin-top: -250px;
+    width: 450px;
+    height: 600px;
+    background: #fff;
+    background: rgba(255, 255, 255, .8);
+    border-radius: 12px;
+    border-radius: 12px;
+    overflow: hidden;
+    /* display: none; */
+}
+
+.register .loginType .welcome {
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.register .userType {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.register .userType span {
+    height: 30px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 20px;
+    line-height: 30px;
+    /* cursor: pointer; */
+    background: rgba(104, 136, 241, .5);
+}
+
+.register .form2 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.register .form2 p {
+    margin-top: 10px;
+    height: 80px;
+}
+
+.register .form2 .tip {
+    color: red;
+    font-weight: 700;
+    display: none;
+    font-size: 12px;
+}
+
+
+/* .register .form2 .nametip {
+    display: none;
+}
+
+.register .form2 .pswtip {
+   
+} */
+
+.register .form2 input {
+    /* width: ; */
+    height: 40px;
+    background-color: rgb(240, 235, 235);
+    border-radius: 5px;
+    border: 1px solid #E0E0E0;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.register .form2 .code {
+    /* max-height: 40px; */
+    width: 80px;
+    height: 30px;
+    margin-right: 9px;
+}
+
+.register .form2 #btn {
+    width: 100px;
+    height: 40px;
+    background-color: cornflowerblue;
+    border: #cccccc;
+    border-radius: 10px;
+    cursor: pointer;
+}
